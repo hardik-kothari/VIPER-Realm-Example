@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleCell" rowHeight="400" id="KGk-i7-Jjw" customClass="ArticleCell" customModule="Cars" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="399.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bJB-se-OIU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="346"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="346" id="GZ7-sa-eED"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DLU-EL-LGz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="399.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Q7 - Greatness starts, when you don't stop." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqo-ag-kBC">
+                        <rect key="frame" x="16" y="252" width="317" height="57.5"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="24"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="29.11.2017 15:13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0K-BY-lmX">
+                        <rect key="frame" x="16" y="315.5" width="317" height="16"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                        <color key="textColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="The Audi Q7 is the result of an ambitious idea: never cease to improve." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFm-dv-GnB">
+                        <rect key="frame" x="16" y="349.5" width="317" height="33.5"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iFm-dv-GnB" firstAttribute="top" secondItem="d0K-BY-lmX" secondAttribute="bottom" constant="18" id="0ze-Wm-aSs"/>
+                    <constraint firstItem="iFm-dv-GnB" firstAttribute="leading" secondItem="d0K-BY-lmX" secondAttribute="leading" id="Asa-Yo-KU8"/>
+                    <constraint firstItem="Kqo-ag-kBC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="252" id="BLu-eZ-MWo"/>
+                    <constraint firstItem="d0K-BY-lmX" firstAttribute="trailing" secondItem="Kqo-ag-kBC" secondAttribute="trailing" id="Cf0-7e-A3a"/>
+                    <constraint firstItem="Kqo-ag-kBC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="EX7-ys-J61"/>
+                    <constraint firstAttribute="trailing" secondItem="Kqo-ag-kBC" secondAttribute="trailing" constant="42" id="KAY-US-10W"/>
+                    <constraint firstItem="bJB-se-OIU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KDB-ji-Vyn"/>
+                    <constraint firstItem="DLU-EL-LGz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KkW-KJ-ZDi"/>
+                    <constraint firstItem="iFm-dv-GnB" firstAttribute="trailing" secondItem="d0K-BY-lmX" secondAttribute="trailing" id="N4P-C2-5x1"/>
+                    <constraint firstItem="d0K-BY-lmX" firstAttribute="top" secondItem="Kqo-ag-kBC" secondAttribute="bottom" constant="6" id="NbQ-aJ-Zxm"/>
+                    <constraint firstAttribute="trailing" secondItem="DLU-EL-LGz" secondAttribute="trailing" id="ZFh-G6-jJZ"/>
+                    <constraint firstItem="DLU-EL-LGz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dKk-2j-GRA"/>
+                    <constraint firstItem="d0K-BY-lmX" firstAttribute="leading" secondItem="Kqo-ag-kBC" secondAttribute="leading" id="iKW-ke-2rg"/>
+                    <constraint firstItem="bJB-se-OIU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="j1x-Mo-9Ul"/>
+                    <constraint firstAttribute="bottom" secondItem="DLU-EL-LGz" secondAttribute="bottom" id="knK-ky-Hwy"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iFm-dv-GnB" secondAttribute="bottom" constant="16" id="u04-pN-koI"/>
+                    <constraint firstAttribute="trailing" secondItem="bJB-se-OIU" secondAttribute="trailing" id="wEo-Nv-t76"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgArticle" destination="bJB-se-OIU" id="yeW-Hz-e0I"/>
+                <outlet property="lblDescription" destination="iFm-dv-GnB" id="cti-1F-u9R"/>
+                <outlet property="lblLaunchDate" destination="d0K-BY-lmX" id="Zrp-rE-i7A"/>
+                <outlet property="lblTitle" destination="Kqo-ag-kBC" id="KtZ-pk-x73"/>
+                <outlet property="vwOverlay" destination="DLU-EL-LGz" id="weu-dD-o4W"/>
+            </connections>
+            <point key="canvasLocation" x="85.599999999999994" y="105.24737631184409"/>
+        </tableViewCell>
+    </objects>
+</document>
