@@ -26,7 +26,7 @@ extension CarsAPI: TargetType {
     
     var path: String {
         switch self {
-        case .getArticleList: return "/article/get_articles_list"
+        case .getArticleList: return "your-api-endpoint"
         }
     }
     

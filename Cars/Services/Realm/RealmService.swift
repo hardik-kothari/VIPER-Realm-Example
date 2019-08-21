@@ -24,7 +24,7 @@ class RealmService<T>: RealmServiceProtocol where T: RealmEntity, T: Object, T.E
     func save(items: [T.EntityType]) throws {
         try realm.write {
             items.forEach {
-                realm.add($0.realmObject as! T, update: true)
+                realm.add($0.realmObject as! T, update: .all)
             }
         }
     }
